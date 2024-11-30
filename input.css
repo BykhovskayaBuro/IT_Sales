@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#loading-overlay {
+  @apply fixed top-0 left-0 w-full h-full bg-bgColor z-[9999] opacity-0 transition-opacity duration-500 pointer-events-none;
+}
+
+.btn-shift {
+  @apply left-[65%] block;
+}
+
+.category-active {
+  @apply translate-x-0;
+}
+
+.close-span-top {
+  @apply top-1/2 rotate-45 translate-x-[-50%] translate-y-[-50%] absolute left-1/2 right-0 m-0 w-[40px];
+}
+
+.close-span-mid {
+  @apply bg-transparent;
+}
+
+.close-span-bottom {
+  @apply top-1/2 rotate-[-45deg] translate-x-[-50%] translate-y-[-50%] absolute left-1/2 right-0 m-0 w-[40px];
+}
+
+.size-input:checked + .size-span {
+  @apply bg-mainColor text-white border-mainColor;
+}
+
+.color-input:checked + .color-span {
+  @apply border-white;
+}
+
+.color-input:checked + .color-span::before {
+  @apply content-[''] absolute top-minus5 bottom-minus5 right-minus5 left-minus5 rounded-[50%] border-solid border-mainColor border-2;
+}
+
+.slick-list {
+  @apply mb-10;
+}
+
+.slick-dots {
+  @apply flex justify-center items-center space-x-3;
+}
+
+.slick-dots button {
+  @apply w-[18px] h-[18px] border-solid border-gray-400 border-2 rounded-full text-[0px];
+}
+
+.slick-active button {
+  @apply bg-mainColor;
+}
+
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}

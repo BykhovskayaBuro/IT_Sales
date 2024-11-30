@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link href="node_modules/slick-carousel/slick/slick.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="node_modules/jquery/dist/jquery.js" defer></script>
+    <script src="node_modules/slick-carousel/slick/slick.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>Толстовка с капюшоном</title>
+  </head>
+  <body>
+    <div id="loading-overlay"></div>
+    <main id="content" class="px-2 py-5 container mx-auto relative">
+      <div>
+        <h2 class="mb-3 font-bold text-2xl">Информация о товаре</h2>
+        <button type="button">
+          <span class="sr-only">Закрыть карточку товара</span>
+        </button>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Толстовка с капюшоном</h3>
+        <div id="product-slider">
+          <img src="./img/product-1.jpg" alt="Толстовка черного цвета" />
+          <img src="./img/product-2.jpg" alt="Толстовка розового цвета" />
+          <img src="./img/product-3.jpg" alt="Толстовка желтого цвета" />
+        </div>
+        <h5 class="font-bold pt-4 mb-3">Описание товара</h5>
+        <p class="text-gray-500 text-justify">
+          100% хлопок, прошедший биологическую стирку, делает ткань особенно
+          мягкой и шелковистой. Эластичный круглый вырез в рубчик. Аккуратный
+          шов без катышков и потертостей.
+        </p>
+        <p class="text-gray-500 text-justify">
+          Обеспечивает непревзойденный комфорт. В любое время и в любом месте.
+          Бесконечный выбор матовых HD-принтов.
+        </p>
+        <form class="pt-5">
+          <fieldset class="mb-10">
+            <legend class="font-semibold mb-3">Выбрать размер:</legend>
+            <div class="space-x-2">
+              <label for="xs-size">
+                <input
+                  class="size-input w-0 h-0 opacity-0 absolute z-[-1]"
+                  type="radio"
+                  name="size"
+                  id="xs-size"
+                  checked
+                />
+                <span
+                  class="size-span w-[38px] h-[38px] inline-block uppercase border-solid border-gray-500 border-2 rounded-xl text-center p-1 transition-all duration-500 ease-in"
+                  >XS</span
+                >
+              </label>
+              <label for="s-size">
+                <input
+                  class="size-input w-0 h-0 opacity-0 absolute z-[-1]"
+                  type="radio"
+                  name="size"
+                  id="s-size"
+                />
+                <span
+                  class="size-span w-[38px] h-[38px] inline-block uppercase border-solid border-gray-500 border-2 rounded-xl text-center p-1 transition-all duration-500 ease-in"
+                  >S</span
+                >
+              </label>
+              <label for="m-size">
+                <input
+                  class="size-input w-0 h-0 opacity-0 absolute z-[-1]"
+                  type="radio"
+                  name="size"
+                  id="m-size"
+                />
+                <span
+                  class="size-span w-[38px] h-[38px] inline-block uppercase border-solid border-gray-500 border-2 rounded-xl text-center p-1 transition-all duration-500 ease-in"
+                  >M</span
+                >
+              </label>
+              <label for="l-size">
+                <input
+                  class="size-input size-input w-0 h-0 opacity-0 absolute z-[-1]"
+                  type="radio"
+                  name="size"
+                  id="l-size"
+                />
+                <span
+                  class="size-span w-[38px] h-[38px] inline-block uppercase border-solid border-gray-500 border-2 rounded-xl text-center p-1 transition-all duration-500 ease-in"
+                  >L</span
+                >
+              </label>
+              <label for="xl-size">
+                <input
+                  class="size-input w-0 h-0 overflow-hidden"
+                  type="radio"
+                  name="size"
+                  id="xl-size"
+                />
+                <span
+                  class="size-span w-[38px] h-[38px] inline-block uppercase border-solid border-gray-500 border-2 rounded-xl text-center p-1 transition-all duration-500 ease-in"
+                  >XL</span
+                >
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="mb-10">
+            <legend class="font-semibold mb-3">Доступные цвета:</legend>
+            <div class="space-x-2">
+              <label for="black-color">
+                <input
+                  class="color-input w-0 h-0 opacity-0 absolute z-[-1]"
+                  type="radio"
+                  name="color"
+                  id="black-color"
+                  checked
+                />
+                <span
+                  class="color-span w-[30px] h-[30px] inline-block bg-black border-solid border-black border-4 rounded-full transition-all duration-500 ease-in relative"
+                ></span>
+              </label>
+              <label for="yellow-color">
+                <input
+                  class="color-input w-0 h-0 opacity-0 absolute z-[-1]"
+                  type="radio"
+                  name="color"
+                  id="yellow-color"
+                />
+                <span
+                  class="color-span w-[30px] h-[30px] inline-block bg-yellow-500 border-solid border-yellow-500 border-4 rounded-full transition-all duration-500 ease-in relative"
+                ></span>
+              </label>
+              <label for="pink-color">
+                <input
+                  class="color-input w-0 h-0 opacity-0 absolute z-[-1]"
+                  type="radio"
+                  name="color"
+                  id="pink-color"
+                />
+                <span
+                  class="color-span w-[30px] h-[30px] inline-block bg-pink-500 border-solid border-pink-500 border-4 rounded-full transition-all duration-500 ease-in relative"
+                ></span>
+              </label>
+            </div>
+          </fieldset>
+          <span
+            class="w-full text-center rounded-xl py-1 px-2 border-solid border-mainColor border-2 block mb-4"
+            >4999.00 руб</span
+          >
+          <button
+            id="basketBtn"
+            class="bg-mainColor text-white rounded-xl py-3 px-9 text-xl w-full transition-all hover:bg-purple-500 duration-500 ease-in"
+            type="button"
+          >
+            Добавить в корзину
+          </button>
+          <div
+            class="adding-notification hidden justify-center items-center fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-modal border-solid border-mainColor border-2 text-mainColor w-72 min-h-44 rounded-xl opacity-80 text-center"
+          >
+            <span class="text-xl font-semibold"
+              >Товар успешно добавлен в корзину.</span
+            >
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

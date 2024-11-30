@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link href="node_modules/slick-carousel/slick/slick.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="node_modules/jquery/dist/jquery.js" defer></script>
+    <script src="node_modules/slick-carousel/slick/slick.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>Женская одежда</title>
+  </head>
+  <body>
+    <div id="loading-overlay"></div>
+    <main id="content" class="container mx-auto py-3 px-2 relative">
+      <h2 class="mb-3 text-2xl font-bold">Все товары</h2>
+      <ul class="grid grid-cols-2 gap-2">
+        <li class="m-auto">
+          <a
+            class="hover:opacity-75 transition-all duration-300"
+            href="product.html"
+          >
+            <img
+              class="rounded-xl"
+              src="img/img-1.jpg"
+              alt="Девушка в белой футболке"
+            />
+            <span class="block text-xs font-bold pt-4"
+              >Белый укороченный топ с рисунком</span
+            >
+            <span class="block text-sm pt-2">2999,00 руб</span></a
+          >
+        </li>
+        <li class="m-auto">
+          <a
+            class="hover:opacity-75 transition-all duration-300"
+            href="product.html"
+          >
+            <img
+              class="rounded-xl"
+              src="img/img-2.jpg"
+              alt="Девушка в лавандовой толстовке"
+            />
+            <span class="block text-xs font-bold pt-4"
+              >Лавандовая толстовка с капюшоном</span
+            >
+            <span class="block text-sm pt-2">4999,00 руб</span></a
+          >
+        </li>
+        <li class="m-auto">
+          <a
+            class="hover:opacity-75 transition-all duration-300"
+            href="product.html"
+            ><img
+              class="rounded-xl"
+              src="img/img-3.jpg"
+              alt="Девушка в топе с узором из листьев"
+            />
+            <span class="block text-xs font-bold pt-4"
+              >Топ с узором из листьев</span
+            >
+            <span class="block text-sm pt-2">1999,00 руб</span></a
+          >
+        </li>
+        <li class="m-auto">
+          <a
+            class="hover:opacity-75 transition-all duration-300"
+            href="product.html"
+            ><img
+              class="rounded-xl"
+              src="img/img-4.jpg"
+              alt="Девушка в черных шортах"
+            />
+            <span class="block text-xs font-bold pt-4">Черные шорты</span>
+            <span class="block text-sm pt-2">3999,00 руб</span></a
+          >
+        </li>
+        <li class="m-auto">
+          <a
+            class="hover:opacity-75 transition-all duration-300"
+            href="product.html"
+          >
+            <img
+              class="rounded-xl"
+              src="img/img-5.jpg"
+              alt="Девушка в черной толстовке"
+            />
+            <span class="block text-xs font-bold pt-4">Черная толстовка</span>
+            <span class="block text-sm pt-2">4999,00 руб</span></a
+          >
+        </li>
+        <li class="m-auto">
+          <a
+            class="hover:opacity-75 transition-all duration-300"
+            href="product.html"
+          >
+            <img
+              class="rounded-xl"
+              src="img/img-6.jpg"
+              alt="Девушка в укороченном голубом топе"
+            />
+            <span class="block text-xs font-bold pt-4"
+              >Укороченный голубой топ</span
+            >
+            <span class="block text-sm pt-2">1999,00 руб</span></a
+          >
+        </li>
+      </ul>
+      <button
+        id="btnOpenCategory"
+        class="w-[50px] h-[50px] px-1 py-2 bg-mainColor rounded-xl sticky bottom-[20px] left-[80%] z-30 hover:bg-purple-400 transition-all duration-300 ease-in flex flex-col justify-around"
+        type="button"
+      >
+        <span class="w-[30px] h-[2px] bg-white block mx-auto"></span
+        ><span class="w-[30px] h-[2px] bg-white block mx-auto"></span
+        ><span class="w-[30px] h-[2px] bg-white block mx-auto"></span>
+        <span class="sr-only">Кнопка раскрыть категори товаров</span>
+      </button>
+      <div
+        id="categoryBlock"
+        class="h-screen w-[85%] fixed top-0 left-0 block translate-x-[-100%] transition-all duration-700"
+      >
+        <div class="bg-mainColor py-3 px-3">
+          <h2 class="mb-2 text-xl text-white">Категории</h2>
+          <form class="flex justify-between items-center w-full">
+            <label for="search">
+              <input
+                class="px-3 py-1 block max-w-[100%] w-full"
+                type="search"
+                name="search-btn"
+                id="search"
+                placeholder="Поиск товара"
+                required
+              />
+            </label>
+            <button
+              class="w-[50px] h-[50px] relative flex justify-center items-center before:content-[''] before:absolute before:top-[50%] before:left-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:w-full before:h-full hover:before:bg-white hover:before:opacity-10 before:rounded-xl"
+            >
+              <svg
+                width="21"
+                height="20"
+                viewBox="0 0 21 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.02081 16.4718C4.47604 16.4718 0.778625 12.7772 0.778625 8.23588C0.778625 3.69459 4.47604 0 9.02081 0C13.5656 0 17.263 3.69459 17.263 8.23588C17.263 12.7772 13.5656 16.4718 9.02081 16.4718ZM9.02081 1.5613C5.33761 1.5613 2.34112 4.5555 2.34112 8.23588C2.34112 11.9163 5.33761 14.9105 9.02081 14.9105C12.704 14.9105 15.7005 11.9163 15.7005 8.23588C15.7005 4.5555 12.704 1.5613 9.02081 1.5613ZM20.5498 19.7713C20.8549 19.4665 20.8549 18.9722 20.5498 18.6673L17.0537 15.1739C16.7486 14.869 16.2539 14.869 15.9488 15.1739C15.6438 15.4788 15.6438 15.9731 15.9488 16.2779L19.4449 19.7713C19.5975 19.9238 19.7974 20 19.9974 20C20.1974 20 20.3972 19.9238 20.5498 19.7713Z"
+                  fill="#ffffff"
+                />
+              </svg>
+              <span class="sr-only">Кнопка поиска товара</span>
+            </button>
+          </form>
+        </div>
+        <ul class="bg-bgColor text-white relative space-y-3 px-4 py-4 h-full">
+          <li>
+            <a
+              class="hover:text-mainColor transition-all duration-300 after:content['>'] flex justify-between after:content-['>'] after:text-white after:w-[20px] after:h-[20px] hover:after:text-mainColor"
+              href="product.html"
+              >Классический
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-mainColor transition-all duration-300 after:content['>'] flex justify-between after:content-['>'] after:text-white after:w-[20px] after:h-[20px] hover:after:text-mainColor"
+              href="product.html"
+              >Повседневная</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-mainColor transition-all duration-300 after:content['>'] flex justify-between after:content-['>'] after:text-white after:w-[20px] after:h-[20px] hover:after:text-mainColor"
+              href="product.html"
+              >Спорт</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-mainColor transition-all duration-300 after:content['>'] flex justify-between after:content-['>'] after:text-white after:w-[20px] after:h-[20px] hover:after:text-mainColor"
+              href="product.html"
+              >Элегантный</a
+            >
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
